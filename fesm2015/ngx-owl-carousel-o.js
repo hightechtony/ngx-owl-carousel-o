@@ -396,7 +396,7 @@ let CarouselService = class CarouselService {
             }, {
                 filter: ['items', 'settings'],
                 run: () => {
-                    const clones = [], items = this._items, settings = this.settings, 
+                    const clones = [], items = this._items, settings = this.settings,
                     // TODO: Should be computed from number of min width items in stage
                     view = Math.max(settings.items * 2, 4), size = Math.ceil(items.length / 2) * 2;
                     let append = [], prepend = [], repeat = settings.loop && items.length ? settings.rewind ? view : Math.max(view, size) : 0;
@@ -440,7 +440,7 @@ let CarouselService = class CarouselService {
                 run: () => {
                     const padding = this.settings.stagePadding, coordinates = this._coordinates, css = {
                         'width': Math.ceil(Math.abs(coordinates[coordinates.length - 1])) + padding * 2,
-                        'padding-left': padding || '',
+                        'padding-left': || '',
                         'padding-right': padding || ''
                     };
                     this.stageData.width = css.width; // use this property in *ngIf directive for .owl-stage element
