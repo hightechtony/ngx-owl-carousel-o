@@ -440,7 +440,7 @@ let CarouselService = class CarouselService {
                 run: () => {
                     const padding = this.settings.stagePadding, coordinates = this._coordinates, css = {
                         'width': Math.ceil(Math.abs(coordinates[coordinates.length - 1])) + padding * 2,
-                        'padding-left': || '',
+                        'padding-left':  '',
                         'padding-right': padding || ''
                     };
                     this.stageData.width = css.width; // use this property in *ngIf directive for .owl-stage element

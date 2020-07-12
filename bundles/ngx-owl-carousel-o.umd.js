@@ -532,7 +532,7 @@
                     run: function () {
                         var padding = _this.settings.stagePadding, coordinates = _this._coordinates, css = {
                             'width': Math.ceil(Math.abs(coordinates[coordinates.length - 1])) + padding * 2,
-                            'padding-left':  || '',
+                            'padding-left':   '',
                             'padding-right': padding || ''
                         };
                         _this.stageData.width = css.width; // use this property in *ngIf directive for .owl-stage element
